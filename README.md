@@ -1,5 +1,5 @@
 ### app-imc
-* npm install -g expo-cli (Instalação do expo no diretório raiz da máquina)<br>
+* npm install expo-cli --global (Instalação do expo no diretório raiz da máquina)<br>
 * expo init imc (gerando app "imc" na pasta destino)<br>
 * cd imc<br>
 * expo start (startar o expo para rodar no emulador android ou ios ou na web)<br>
