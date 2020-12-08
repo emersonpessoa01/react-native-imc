@@ -44,13 +44,14 @@ export default class App extends React.Component {
 
   render() {
     const { viewContainer, textInput, text, input, button } = styles;
+    const { weight, height, result, info } = this.state;
     return (
       <View style={viewContainer}>
         <Text style={text}>Altura (m)</Text>
         <TextInput
           style={textInput}
           onChangeText={(height) => this.setState({ height })}
-          value={this.state.height}
+          value={height}
           placeholder="Exemplo: 1,75"
           keyboardType={"numeric"}
         />
@@ -58,7 +59,7 @@ export default class App extends React.Component {
         <TextInput
           style={textInput}
           onChangeText={(weight) => this.setState({ weight })}
-          value={this.state.weight}
+          value={weight}
           placeholder="Exemplo: 68,8"
           keyboardType={"numeric"}
         />
@@ -84,7 +85,7 @@ export default class App extends React.Component {
 
         <Separator />
         <Text style={input}>
-          Seu IMC é: {this.state.result.toFixed(2)} {this.state.info}
+          Seu IMC é: {result.toFixed(2)} {info}
         </Text>
       </View>
     );
