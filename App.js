@@ -22,15 +22,15 @@ export default class App extends React.Component {
     //s.result < 18.5
 
     s.result < 18.5
-      ? (s.info = "Menor que 18,5, seu quadro é de: Magreza")
+      ? (s.info = "Menor que 18.5(kg/m2). Seu quadro é de Magreza")
       : s.result < 24.9
-      ? (s.info = "Entre 18,5 e 24,9, seu quadro é: Normal")
+      ? (s.info = "Entre 18.5 e 24.9(kg/m2). Seu quadro é Normal")
       : s.result < 29.9
-      ? (s.info = "Entre 25,0 e 29,9, você está com: Sobrepeso")
+      ? (s.info = "Entre 25.0 e 29.9(kg/m2). Você está com Sobrepeso")
       : s.result < 39.9
-      ? (s.info = "Entre 30,0 e 39,9, tome cuidado, você está com: Obesidade")
+      ? (s.info = "Entre 30.0 e 39.9(kg/m2). Tome cuidado, você está com Obesidade")
       : s.result > 39.9
-      ? (s.info = "Acima de 39,9, você está com: Obesidade Grave")
+      ? (s.info = "Acima de 39.9(kg/m2). Você está com Obesidade Grave")
       : (s.info = "-Inválido");
     this.setState(s);
   };
@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#38B2AC"
   },
   botton: {
-    alignItems: "center",
+    alignSelf: "center",
     width: 10,
   },
   input: {
