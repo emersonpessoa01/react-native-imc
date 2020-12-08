@@ -19,8 +19,6 @@ export default class App extends React.Component {
     let s = this.state;
     s.result = imc;
 
-    //s.result < 18.5
-
     s.result < 18.5
       ? (s.info = "Menor que 18.5(kg/m2). Seu quadro é de Magreza")
       : s.result < 24.9
