@@ -8,7 +8,7 @@ export default class App extends React.Component {
       weigth: "",
       height: "",
       info: "-",
-      resultad: 0.0,
+      result: 0.0,
     };
     this.calculateIMC = this.calculateIMC.bind(this);
   }
@@ -18,7 +18,7 @@ export default class App extends React.Component {
     let imc = weigth / (height * height);
 
     let s = this.state;
-    s.resultad = imc;
+    s.result = imc;
     imc < 18.5
       ? (s.info = ".Menor que 18.5 - seu quadro é de Magreza")
       : imc < 24.9
@@ -35,14 +35,14 @@ export default class App extends React.Component {
     this.setState({
       weigth: "",
       height: "",
-      resultad: 0.0,
+      result: 0.0,
       info: "-",
     });
   };
 
   render() {
     const { viewContainer, text, textInput, input } = styles;
-    const {weigth, height, resultad, info} = this.state;
+    const {weigth, height, result, info} = this.state;
     return (
       <View style={viewContainer}>
         <Text style={text}>Altura (m)</Text>
@@ -77,7 +77,7 @@ export default class App extends React.Component {
         />
         <Separator />
         <Text style={input}>
-          Seu IMC é: {resultad.toFixed(2)} {info}
+          Seu IMC é: {result.toFixed(2)} {info}
         </Text>
       </View>
     );
