@@ -31,7 +31,7 @@ export default class App extends React.Component {
       ? (s.info = "Entre 30.0 e 39.9(kg/m2). Tome cuidado, você está com Obesidade")
       : s.result > 39.9
       ? (s.info = "Acima de 39.9(kg/m2). Você está com Obesidade Grave")
-      : (s.info = "-Inválido");
+      : (s.info = "- OPS! Você não digitou nada");
     this.setState(s);
   };
 
