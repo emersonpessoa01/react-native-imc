@@ -20,16 +20,16 @@ export default class App extends React.Component {
     s.result = imc;
 
     s.result < 18.5
-      ? (s.info = "Menor que 18.5(kg/m2). Seu quadro é de Magreza")
+      ? (s.info =".Menor que 18.5(kg/m2). Seu quadro é de Magreza")
       : s.result < 24.9
-      ? (s.info = "Entre 18.5 e 24.9(kg/m2). Seu quadro é Normal")
+      ? (s.info =".Entre 18.5 e 24.9(kg/m2). Seu quadro é Normal")
       : s.result < 29.9
-      ? (s.info = "Entre 25.0 e 29.9(kg/m2). Você está com Sobrepeso")
+      ? (s.info =".Entre 25.0 e 29.9(kg/m2). Você está com Sobrepeso")
       : s.result < 39.9
-      ? (s.info = "Entre 30.0 e 39.9(kg/m2). Tome cuidado, você está com Obesidade")
+      ? (s.info =".Entre 30.0 e 39.9(kg/m2). Tome cuidado, você está com Obesidade")
       : s.result > 39.9
-      ? (s.info = "Acima de 39.9(kg/m2). Você está com Obesidade Grave")
-      : (s.info = "- OPS! Você não digitou nada");
+      ? (s.info =".Acima de 39.9(kg/m2). Você está com Obesidade Grave")
+      : (s.info ="- OPS! Você não digitou nada");
     this.setState(s);
   };
 
@@ -64,7 +64,7 @@ export default class App extends React.Component {
           keyboardType={"numeric"}
         />
         <Separator />
-        <View style={button}>
+        <View style={{margin:30}}>
           <Button
             onPress={this.calculateIMC}
             title="Calcula"
@@ -74,7 +74,7 @@ export default class App extends React.Component {
         </View>
 
         <Separator />
-        <View style={button}>
+        <View style={{margin:30}}>
           <Button
             onPress={this.clear}
             title="Limpa"
@@ -103,10 +103,6 @@ const styles = StyleSheet.create({
   },
   viewContainer:{
     backgroundColor: "#38B2AC"
-  },
-  botton: {
-    alignSelf: "center",
-    width: 10,
   },
   input: {
     paddingLeft: 5,
