@@ -64,7 +64,7 @@ export default class App extends React.Component {
           keyboardType={"numeric"}
         />
         <Separator />
-        <View style={{margin:30}}>
+        <View style={{margin:20}}>
           <Button
             onPress={this.calculateIMC}
             title="Calcula"
@@ -74,7 +74,7 @@ export default class App extends React.Component {
         </View>
 
         <Separator />
-        <View style={{margin:30}}>
+        <View style={{margin:20}}>
           <Button
             onPress={this.clear}
             title="Limpa"
