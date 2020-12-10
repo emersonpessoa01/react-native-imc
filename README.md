@@ -7,6 +7,6 @@
 ### Preview:
 <hr> 
      <p align="center">
-     <img src="./image/qrcode-imc.png" width="60%" alt="fullstack-igti">
+     <img src="./image/qrcode-imc.png" width="40%" alt="fullstack-igti">
      </p>
 <hr>
