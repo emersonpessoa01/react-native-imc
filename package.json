@@ -23,7 +23,7 @@
     "name": "app-imc",
     "icon": "./path/to/your/app-icon.png",
     "version": "1.0.0",
-    "slug": "",
+    "slug": "app-imc",
     "ios": {
       "bundleIdentifier": "imc",
       "buildNumber": "1.0.0"
